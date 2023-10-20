@@ -16,9 +16,9 @@ a {
 
 .header-container {
     display: flex;
-    max-width: 1161px;
     width: 100%;
     padding: 30px 0;
+    margin: 10px;
     justify-content: space-between;
 }
 
@@ -34,17 +34,10 @@ a {
 }
 
 .header-weap{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    color: #af9678;
-}
-.header-container-weap{
-    display: flex;
     max-width: 1161px;
     width: 100%;
     padding: 30px 0;
-    justify-content: space-between;
+    color: #af9678;
 }
 
 .logo {
@@ -92,21 +85,58 @@ img {
     justify-content: center;
 }
 
-
 .raw {
     display: flex;
     max-width: 1161px;
     width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 10px;
+    align-items: center;
 }
 
+@media (max-width: 425px) {
+
+    .header-container {
+        padding: 1%;
+        margin: 1%;
+    }
+
+    .logo {
+        font-size: 100%;
+    }
+
+    .header-weap{
+        margin-left: 5%;
+    }
+
+    .nav-container {
+        display: none;
+    }
+
+    .image-container{
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .nav-burger-container {
+        display: flex;
+    }
+
+    .card{
+        margin: 0% 5% 0% 5%;
+        width: 90%;
+    }
+
+    .raw {
+        justify-content: center;
+    }
+
+} 
+
 .card {
-    display: flex;
-    flex-direction: column;
     background-color: rgb(55,30,13);
-    
+    margin: 0px 5px 0px 5px;
 }
 
 .image-container {
