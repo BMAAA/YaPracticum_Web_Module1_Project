@@ -66,6 +66,14 @@ a {
     line-height: normal;
 }
 
+.nav-burger-container {
+    display: none;
+}
+
+.nav-burger-container > img {
+    width: 40px;
+}
+
 .footer {
     margin-top: 50px;
     background: var(--black, rgb(150, 0, 0));
@@ -193,45 +201,26 @@ img {
     margin: 0 auto;
 }
 
-@media (max-width: 1125px) {
-
-    .header-container {
-        padding: 1%;
-        margin: 1%;
-    }
-
-    .logo {
-        font-size: 100%;
-    }
-
-    .header-weap{
-        margin-left: 5%;
-    }
-
-
-
-    .image-container{
-        max-width: 96%;
-        width: 100%;
-        margin: 2%;
-    }
-
-
-    .card{
-        width: 410px;
-    }
-
-    .raw {
-        justify-content: center;
-        max-width: 410px;
-    }
-
-} 
-
-@media (max-width: 625px) {
-
+@media (max-width: 768px) {
     .nav-container {
         display: none;
     }
 
-}   
+    .nav-burger-container {
+        display: flex;
+    }
+
+    .raw {
+        justify-content: center;
+    }
+
+    .card {
+        max-width: 170px;
+        height: 375px;
+    }
+
+    .image-container {
+        width: 150px;
+        height: 150px;
+    }
+}
